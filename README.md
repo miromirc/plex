@@ -69,6 +69,12 @@ sudo mkdir -p /mnt/risanke
 Poveži omrežni vir v lokalno mapo:
 ```bash
 sudo mount -t cifs -o guest **** /mnt/risanke
+
+ali
+
+sudo mount -t cifs -o username="whoami",password=GESLO //"HOSTNAME"/Risanke /mnt/risanke
+HOSTNAME najdes, kadar deliš mapo v omrežje, in ti ga izpiše.
+
 ```
 *(Kjer so `****` omrežna pot do tvoje mape, npr. `//IP_RACUNALNIKA/ImeMape`).*
 
